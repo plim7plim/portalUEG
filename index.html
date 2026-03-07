@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 <meta charset="UTF-8">
 <title>Portal de Projetos - UEG</title>
 <link rel="stylesheet" href="style.css">
+
+<script>
+
+function filtrar(tipo){
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+
+if(tipo === 'todos'){
+card.style.display = "block";
+}
+
+else if(card.classList.contains(tipo)){
+card.style.display = "block";
+}
+
+else{
+card.style.display = "none";
+}
+
+});
+
+}
+
+</script>
+
 </head>
 
 <body>
@@ -13,10 +41,18 @@
 <p>Curso de Sistemas para Internet - UEG Itaberaí turma 2026/1</p>
 </header>
 
-<nav>
-<a href="index.html">Início</a>
-<a href="projetos.html">Projetos de Pesquisa</a>
-<a href="extensao.html">Projetos de Extensão</a>
+<nav class="filtro">
+
+<button onclick="filtrar('todos')">Todos</button>
+
+<button onclick="filtrar('pesquisa')">
+Projetos de Pesquisa
+</button>
+
+<button onclick="filtrar('extensao')">
+Projetos de Extensão
+</button>
+
 </nav>
 
 <section>
@@ -24,32 +60,23 @@
 <h2>Sobre</h2>
 
 <p>
-Este portal apresenta oportunidades de participação em projetos de pesquisa,
-extensão e desenvolvimento tecnológico nas áreas de:
+Este portal apresenta oportunidades de participação em projetos de pesquisa
+e desenvolvimento tecnológico desenvolvidos na UEG.
 </p>
 
 <div class="cards">
 
-<a href="ia.html" class="card">
-<h3>Inteligência Artificial</h3>
-<p>Projetos envolvendo machine learning e análise inteligente de dados.</p>
+<a href="modelagem.html" class="card pesquisa">
+<h3>Modelagem Multissensores de Estoques de Carbono</h3>
+<p>Projeto de pesquisa utilizando sensoriamento remoto e inteligência artificial para estimar estoques de carbono.</p>
 </a>
 
-<a href="dados.html" class="card">
-<h3>Análise de Dados</h3>
-<p>Estudos e projetos voltados para exploração e interpretação de dados.</p>
+<a href="algoritmos.html" class="card pesquisa">
+<h3>Algoritmos em R para Monitoramento Ambiental</h3>
+<p>Desenvolvimento de pipelines automatizados para análise e processamento de dados ambientais.</p>
 </a>
 
-<a href="sensoriamento.html" class="card">
-<h3>Sensoriamento Remoto</h3>
-<p>Uso de satélites e dados geoespaciais para monitoramento ambiental.</p>
-</a>
-
-<a href="software.html" class="card">
-<h3>Desenvolvimento de Software</h3>
-<p>Criação de aplicações, sistemas web e soluções tecnológicas.</p>
-</a>
-
+</div>
 </div>
 
 </section>
@@ -57,15 +84,16 @@ extensão e desenvolvimento tecnológico nas áreas de:
 <section>
 
 <h2>Projetos de Extensão</h2>
+<p>Os projetos abaixo estão disponíveis em formato PDF para leitura.</p>
 
 <div class="cards">
 
-<a href="documentos/mapeando-a-cidade.pdf" class="card" target="_blank">
+<a href="documentos/mapeando-a-cidade.pdf" class="card extensao" target="_blank">
 <h3>🗺️ Mapeando a Cidade</h3>
 <p>Projeto de extensão para construção de mapas digitais colaborativos.</p>
 </a>
 
-<a href="documentos/chatbot-lapig-escola.pdf" class="card" target="_blank">
+<a href="documentos/chatbot-lapig-escola.pdf" class="card extensao" target="_blank">
 <h3>🤖 Chatbot com IA</h3>
 <p>Desenvolvimento de chatbot educacional para a plataforma LAPIG na Escola.</p>
 </a>
