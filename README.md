@@ -21,14 +21,28 @@ Também é permitido utilizar **ferramentas de Inteligência Artificial**, desde
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 📁 Estrutura do Projeto
 
-O portal foi desenvolvido utilizando tecnologias básicas da web:
 
-* **HTML5** – estrutura do site
-* **CSS3** – estilização e layout
-* **GitHub** – versionamento de código
-* **GitHub Pages** – hospedagem gratuita do portal
+portalProjetosUEG
+│
+├── index.html
+├── algoritmos.html
+├── modelagem.html
+├── style.css
+│
+├── documentos
+│ ├── modelagem-multisensorial.pdf
+│ └── projeto-modelagem-carbono.pdf
+│
+└── README.md
+
+
+- **index.html** → Página inicial do portal  
+- **algoritmos.html** → Página do projeto de algoritmos para monitoramento ambiental  
+- **modelagem.html** → Página do projeto de modelagem multissensores de carbono  
+- **style.css** → Arquivo de estilização do portal  
+- **documentos/** → Pasta contendo os documentos PDF dos projetos  
 
 ---
 
@@ -36,11 +50,11 @@ O portal foi desenvolvido utilizando tecnologias básicas da web:
 
 O portal apresenta informações sobre possíveis projetos de extensão e pesquisa, incluindo:
 
-* 🗺️ **Mapeando a Cidade**
-  Projeto de construção colaborativa de mapas digitais.
+### 🗺️ Mapeando a Cidade
+Projeto de construção colaborativa de mapas digitais.
 
-* 🤖 **Chatbot com IA para Educação**
-  Desenvolvimento de chatbot educacional integrado à plataforma **LAPIG na Escola**.
+### 🤖 Chatbot com IA para Educação
+Desenvolvimento de chatbot educacional integrado à plataforma **LAPIG na Escola**.
 
 Os documentos completos podem ser acessados diretamente no portal.
 
@@ -52,10 +66,10 @@ O site pode ser publicado gratuitamente utilizando **GitHub Pages**.
 
 Passos básicos:
 
-1. Criar um repositório no GitHub
-2. Enviar os arquivos do projeto
-3. Ativar o **GitHub Pages**
-4. Acessar o portal pelo link gerado
+1. Criar um repositório no GitHub  
+2. Enviar os arquivos do projeto  
+3. Ativar o **GitHub Pages**  
+4. Acessar o portal pelo link gerado  
 
 ---
 
@@ -63,10 +77,10 @@ Passos básicos:
 
 Este projeto tem como objetivo:
 
-* Praticar **desenvolvimento web básico**
-* Aprender **versionamento com Git e GitHub**
-* Entender o processo de **publicação de um site**
-* Incentivar a participação em **projetos acadêmicos e de extensão**
+- Praticar desenvolvimento web básico  
+- Aprender versionamento com **Git e GitHub**  
+- Entender o processo de publicação de um site  
+- Incentivar a participação em projetos acadêmicos e de extensão  
 
 ---
 
@@ -78,4 +92,4 @@ Desenvolvido como atividade acadêmica para o curso de **Sistemas para Internet 
 
 ## 📌 Observação
 
-Este portal foi criado para fins educacionais e pode ser expandido futuramente com novos projetos, funcionalidades e melhorias de interface.
+Este portal foi criado para fins educacionais e pode ser expandido futuramente com novos projetos, 
