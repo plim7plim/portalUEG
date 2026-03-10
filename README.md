@@ -14,18 +14,22 @@ Uso de Git e GitHub para versionamento
 
 Publicação gratuita de um site na internet
 
-📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
+
+```
 portalProjetosUEG
-
-index.html
-algoritmos.html
-modelagem.html
-style.css
-
-documentos/
- ├─ modelagem-multisensorial.pdf
- └─ projeto-modelagem-carbono.pdf
-
+│
+├── index.html
+├── algoritmos.html
+├── modelagem.html
+├── style.css
+│
+├── documentos
+│   ├── modelagem-multisensorial.pdf
+│   └── projeto-modelagem-carbono.pdf
+│
+└── README.md
+```
 
 🧰 Ferramentas Utilizadas
 
